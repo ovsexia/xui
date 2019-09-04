@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="css/layout.css" type="text/css" rel="stylesheet" />
+<link href="css/xui.css" type="text/css" rel="stylesheet" />
+<title>xui</title>
+</head>
+
+<body>
+
+<div class="page">
+  <div class="page_pr">
+    <div class="pleft">
+      <ul>
+        <li><a href="#input">表单 &lt;form&gt;</a></li>
+        <li class="on son li_input"><a href="#input">文本框</a></li>
+        <li class="son li_textarea"><a href="#textarea">文本域</a></li>
+        <li class="son li_select"><a href="#select">下拉框</a></li>
+        <li class="son li_button"><a href="#button">按钮</a></li>
+        <li class="son li_radio"><a href="#radio">单选框</a></li>
+        <li class="son li_checkbox"><a href="#checkbox">复选框</a></li>
+        <li class="son li_switch"><a href="#switch">开关</a></li>
+        <li class="son li_file"><a href="#file">上传控件</a></li>
+        <li><a href="#table_1">表格 &lt;table&gt;</a></li>
+        <li class="son li_table_1"><a href="#table_1">默认样式</a></li>
+        <li class="son li_table_2"><a href="#table_2">无外部边框样式</a></li>
+        <li class="son li_table_3"><a href="#table_3">无内部边框样式</a></li>
+        <li class="son li_table_4"><a href="#table_4">无全部边框样式</a></li>
+        <li class="son li_table_5"><a href="#table_5">水平边框样式</a></li>
+        <li class="son li_table_6"><a href="#table_6">水平边框无外边框样式</a></li>
+        <li class="son li_table_7"><a href="#table_7">圆角样式</a></li>
+        <li class="son li_table_8"><a href="#table_8">行间隔背景色</a></li>
+        <li class="son li_table_9"><a href="#table_9">鼠标悬停样式</a></li>
+      </ul>
+    </div><!--pleft-->
+    
+    <div class="pright">
+      <div id="input" class="maindiv">
+        <div class="page_tit">文本框 &lt;input&gt;</div>
+        <div class="table_row">
+          <div class="page_tit2">默认样式</div>
+          <div class="page_tit3">长度为<span>200px</span>，高度为<span>34px</span></div>
+          <div class="example">
+            <input class="xinput" type="text" placeholder="默认样式" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">圆角样式</div>
+          <div class="page_tit3">border-radius为<span>5px</span></div>
+          <div class="example">
+            <input class="xinput xround" type="text" placeholder="圆角样式" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput xround&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">宽度</div>
+          <div class="page_tit3"><code>xwidth1</code>长度为<span>250px</span>，每次增加<span>50px</span></div>
+          <div class="example">
+            <input class="xinput xwidth1" type="text" placeholder="xwidth1: 250px" /><br><br>
+            <input class="xinput xwidth2" type="text" placeholder="xwidth2: 300px" /><br><br>
+            <input class="xinput xwidth3" type="text" placeholder="xwidth3: 350px" /><br><br>
+            <input class="xinput xwidth4" type="text" placeholder="xwidth4: 400px" /><br><br>
+            <input class="xinput xwidth5" type="text" placeholder="xwidth5: 450px" /><br><br>
+            <input class="xinput xwidth6" type="text" placeholder="xwidth6: 500px" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput xwidth1&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xwidth2&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xwidth3&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xwidth4&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xwidth5&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xwidth6&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">高度</div>
+          <div class="page_tit3"><code>xheight1</code>高度为<span>38px</span>，每次增加<span>4px</span></div>
+          <div class="example">
+            <input class="xinput xheight1" type="text" placeholder="xheight1: 38px" /><br><br>
+            <input class="xinput xheight2" type="text" placeholder="xheight2: 42px" /><br><br>
+            <input class="xinput xheight3" type="text" placeholder="xheight3: 46px" /><br><br>
+            <input class="xinput xheight4" type="text" placeholder="xheight4: 50px" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput xheight1&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xheight2&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xheight3&quot; /&gt;</span></li>
+              <li><span>&lt;input class=&quot;xinput xheight4&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">100%宽度</div>
+          <div class="page_tit3">宽度为<span>100%</span></div>
+          <div class="example">
+            <input class="xinput xful" type="text" placeholder="100%宽度" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput xful&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">下划线</div>
+          <div class="example">
+            <input class="xinput xunder" type="text" placeholder="下划线" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput xunder&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">只读文本框</div>
+          <div class="example">
+            <input class="xinput xreadonly" type="text" value="只读文本框" readonly="readonly" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput xreadonly&quot; readonly=&quot;readonly&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">组合样式</div>
+          <div class="page_tit3">可多个样式随意组合</div>
+          <div class="example">
+            <input class="xinput xful xround" type="text" placeholder="组合样式: 宽度100%+圆角" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xinput xful xround&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+      </div><!--input-->
+      
+      <div id="textarea" class="maindiv">
+        <div class="page_tit">文本域 &lt;textarea&gt;</div>
+        <div class="table_row">
+          <div class="page_tit2">默认样式</div>
+          <div class="page_tit3">长度为<span>200px</span>，高度为<span>80px</span></div>
+          <div class="example">
+            <textarea class="xtext" placeholder="默认样式"></textarea>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;textarea class=&quot;xtext&quot;&gt;&lt;/textarea&gt;</span></li>
+            </ol>
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">圆角样式</div>
+          <div class="page_tit3">border-radius为<span>5px</span></div>
+          <div class="example">
+            <textarea class="xtext xround" placeholder="圆角样式"></textarea>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;textarea class=&quot;xtext xround&quot;&gt;&lt;/textarea&gt;</span></li>
+            </ol>
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">宽度</div>
+          <div class="page_tit3"><code>xwidth1</code>长度为<span>250px</span>，每次增加<span>50px</span></div>
+          <div class="example">
+            <textarea class="xtext xwidth1" type="text" placeholder="xwidth1: 250px" /></textarea><br><br>
+            <textarea class="xtext xwidth2" type="text" placeholder="xwidth2: 300px" /></textarea><br><br>
+            <textarea class="xtext xwidth3" type="text" placeholder="xwidth3: 350px" /></textarea><br><br>
+            <textarea class="xtext xwidth4" type="text" placeholder="xwidth4: 400px" /></textarea><br><br>
+            <textarea class="xtext xwidth5" type="text" placeholder="xwidth5: 450px" /></textarea><br><br>
+            <textarea class="xtext xwidth6" type="text" placeholder="xwidth6: 500px" /></textarea>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;textarea class=&quot;xtext xwidth1&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xwidth2&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xwidth3&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xwidth4&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xwidth5&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xwidth6&quot; &gt;&lt;textarea&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">高度</div>
+          <div class="page_tit3"><code>xheight1</code>高度为<span>38px</span>，每次增加<span>20px</span></div>
+          <div class="example">
+            <textarea class="xtext xheight1" type="text" placeholder="xheight1: 100px" /></textarea><br><br>
+            <textarea class="xtext xheight2" type="text" placeholder="xheight2: 120px" /></textarea><br><br>
+            <textarea class="xtext xheight3" type="text" placeholder="xheight3: 140px" /></textarea><br><br>
+            <textarea class="xtext xheight4" type="text" placeholder="xheight4: 160px" /></textarea><br><br>
+            <textarea class="xtext xheight5" type="text" placeholder="xheight5: 180px" /></textarea><br><br>
+            <textarea class="xtext xheight6" type="text" placeholder="xheight6: 200px" /></textarea>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;textarea class=&quot;xtext xheight1&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xheight2&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xheight3&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xheight4&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xheight5&quot; &gt;&lt;textarea&gt;</span></li>
+              <li><span>&lt;textarea class=&quot;xtext xheight6&quot; &gt;&lt;textarea&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">100%宽度</div>
+          <div class="page_tit3">长度为<span>100%</span></div>
+          <div class="example">
+            <textarea class="xtext xful" placeholder="100%宽度"></textarea>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;textarea class=&quot;xtext xful&quot;&gt;&lt;/textarea&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">下划线</div>
+          <div class="example">
+            <textarea class="xtext xunder" placeholder="下划线"></textarea>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;textarea class=&quot;xtext xunder&quot; &gt;&lt;/textarea&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">组合样式</div>
+          <div class="page_tit3">可多个样式随意组合</div>
+          <div class="example">
+            <textarea class="xtext xful xround" placeholder="组合样式: 宽度100%+圆角"></textarea>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;textarea class=&quot;xtext xful xround&quot;&gt;&lt;/textarea&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+      </div><!--textarea-->
+      
+      <div id="select" class="maindiv">
+        <div class="page_tit">下拉框 &lt;select&gt;</div>
+        <div class="table_row">
+          <div class="page_tit2">默认样式</div>
+          <div class="page_tit3">长度为<span>200px</span>，高度为<span>34px</span></div>
+          <div class="example">
+            <select class="xselect"><option>默认样式</option><option>选项2</option><option>选项3</option></select>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;select class=&quot;xselect&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项1&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项2&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项3&lt;/option&gt;</span></li>
+              <li><span>&lt;/select&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">圆角样式</div>
+          <div class="page_tit3">border-radius为<span>5px</span></div>
+          <div class="example">
+            <select class="xselect xround"><option>圆角样式</option><option>选项2</option><option>选项3</option></select>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;select class=&quot;xselect xround&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项1&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项2&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项3&lt;/option&gt;</span></li>
+              <li><span>&lt;/select&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">黑色样式</div>
+          <div class="page_tit3">border-radius为<span>5px</span></div>
+          <div class="example">
+            <select class="xselect xblack"><option>黑色样式</option><option>选项2</option><option>选项3</option></select>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;select class=&quot;xselect xblack&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项1&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项2&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项3&lt;/option&gt;</span></li>
+              <li><span>&lt;/select&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">宽度</div>
+          <div class="page_tit3"><code>xwidth1</code>长度为<span>250px</span>，每次增加<span>50px</span></div>
+          <div class="example">
+            <select class="xselect xwidth1"><option>xwidth1: 250px</option><option>选项2</option><option>选项3</option></select><br><br>
+            <select class="xselect xwidth2"><option>xwidth2: 300px</option><option>选项2</option><option>选项3</option></select><br><br>
+            <select class="xselect xwidth3"><option>xwidth3: 350px</option><option>选项2</option><option>选项3</option></select><br><br>
+            <select class="xselect xwidth4"><option>xwidth4: 400px</option><option>选项2</option><option>选项3</option></select><br><br>
+            <select class="xselect xwidth5"><option>xwidth5: 450px</option><option>选项2</option><option>选项3</option></select><br><br>
+            <select class="xselect xwidth6"><option>xwidth6: 500px</option><option>选项2</option><option>选项3</option></select>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;select class=&quot;xselect xwidth1&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项1&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项2&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项3&lt;/option&gt;</span></li>
+              <li><span>&lt;/select&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">100%宽度</div>
+          <div class="page_tit3">长度为<span>100%</span></div>
+          <div class="example">
+            <select class="xselect xful"><option>100%宽度</option><option>选项2</option><option>选项3</option></select>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;select class=&quot;xselect xful&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项1&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项2&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项3&lt;/option&gt;</span></li>
+              <li><span>&lt;/select&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">组合样式</div>
+          <div class="page_tit3">可多个样式随意组合</div>
+          <div class="example">
+            <select class="xselect xful xround"><option>组合样式: 宽度100%+圆角</option><option>选项2</option><option>选项3</option></select>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;select class=&quot;xselect xful xround&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项1&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项2&lt;/option&gt;</span></li>
+              <li class="level2"><span>&lt;option&gt;选项3&lt;/option&gt;</span></li>
+              <li><span>&lt;/select&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+      </div><!--select-->
+      
+      <div id="button" class="maindiv">
+        <div class="page_tit">按钮 &lt;button&gt;</div>
+        <table class="ptable">
+          <tr class="first">
+            <td width="180">class=""</td>
+            <td width="350">样式</td>
+            <td>代码</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code></td>
+            <td><button class="xbutton">默认按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xblue</code></td>
+            <td><button class="xbutton xblue">蓝色按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xblue&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xred</code></td>
+            <td><button class="xbutton xred">红色按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xred&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xyellow</code></td>
+            <td><button class="xbutton xyellow">黄色按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xyellow&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xgreen</code></td>
+            <td><button class="xbutton xgreen">绿色按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xgreen&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xblack</code></td>
+            <td><button class="xbutton xblack">黑色按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xblack&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xround</code></td>
+            <td><button class="xbutton xround">圆角按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xround&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xdisabled</code></td>
+            <td><button class="xbutton xdisabled">模拟禁用按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xdisabled&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton:disabled</code></td>
+            <td><button class="xbutton" disabled="disabled">真禁用按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton&quot; disabled="disabled"&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xlit</code></td>
+            <td><button class="xbutton xlit">小尺寸按钮</button> <button class="xbutton">普通按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xlit&quot; &gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xful</code></td>
+            <td><button class="xbutton xful">宽度100%按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xful&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+          <tr>
+            <td><code>xbutton</code> <code>xblue</code> <code>xround</code></td>
+            <td><button class="xbutton xblue xround">组合样式（蓝色+圆角）按钮</button></td>
+            <td style="white-space:nowrap;">&lt;button class=&quot;xbutton xblue xround&quot;&gt;按钮&lt;/button&gt;</td>
+          </tr>
+        </table>
+      </div><!--button-->
+      
+      <div id="radio" class="maindiv">
+        <div class="page_tit">单选框 &lt;input type="radio"&gt;</div>        
+        <div class="table_row">
+          <table class="ptable">
+            <tr class="first">
+              <td width="180">class=""</td>
+              <td>样式</td>
+            </tr>
+            <tr>
+              <td><code>xradio</code></td>
+              <td><div class="xradio"><label><input type="radio" checked="checked" /><em></em><span>默认样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xradio</code> <code>xblue</code></td>
+              <td><div class="xradio xblue"><label><input type="radio" checked="checked" /><em></em><span>蓝色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xradio</code> <code>xred</code></td>
+              <td><div class="xradio xred"><label><input type="radio" checked="checked" /><em></em><span>红色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xradio</code> <code>xyellow</code></td>
+              <td><div class="xradio xyellow"><label><input type="radio" checked="checked" /><em></em><span>黄色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>radio</code> <code>xgreen</code></td>
+              <td><div class="xradio xgreen"><label><input type="radio" checked="checked" /><em></em><span>绿色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xradio</code> <code>xblack</code></td>
+              <td><div class="xradio xblack"><label><input type="radio" checked="checked" /><em></em><span>黑色样式</span></label></div></td>
+            </tr>
+          </table>
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">纵向单选框</div>
+          <div class="example">
+            <div class="xradio xblue"><label><input type="radio" name="radio1" /><em></em><span>菠萝</span></label></div>
+            <div class="xradio xblue"><label><input type="radio" name="radio1" /><em></em><span>芒果</span></label></div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;div class="xradio"&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type="radio" name="radio1" /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;菠萝&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+              <li><span>&lt;div class="xradio"&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type="radio" name="radio1" /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;芒果&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">横向单选框</div>
+          <div class="example">
+            <span class="xradio xgreen"><label><input type="radio" name="radio2" /><em></em><span>菠萝</span></label></span>
+            <span class="xradio xgreen"><label><input type="radio" name="radio2" /><em></em><span>芒果</span></label></span>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;span class="xradio"&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type="radio" name="radio1" /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;菠萝&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/span&gt;</span></li>
+              <li><span>&lt;span class="xradio"&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type="radio" name="radio1" /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;芒果&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/span&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+      </div><!--radio-->
+      
+      <div id="checkbox" class="maindiv">
+        <div class="page_tit">复选框 &lt;input type="checkbox"&gt;</div>        
+        <div class="table_row">
+          <table class="ptable">
+            <tr class="first">
+              <td width="160">class=""</td>
+              <td>样式</td>
+            </tr>
+            <tr>
+              <td><code>xcheckbox</code></td>
+              <td><div class="xcheckbox"><label><input type="checkbox" checked="checked" /><em></em><span>默认样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xcheckbox</code> <code>xblue</code></td>
+              <td><div class="xcheckbox xblue"><label><input type="checkbox" checked="checked" /><em></em><span>蓝色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xcheckbox</code> <code>xred</code></td>
+              <td><div class="xcheckbox xred"><label><input type="checkbox" checked="checked" /><em></em><span>红色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xcheckbox</code> <code>xyellow</code></td>
+              <td><div class="xcheckbox xyellow"><label><input type="checkbox" checked="checked" /><em></em><span>黄石样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xcheckbox</code> <code>xgreen</code></td>
+              <td><div class="xcheckbox xgreen"><label><input type="checkbox" checked="checked" /><em></em><span>绿色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xcheckbox</code> <code>xblack</code></td>
+              <td><div class="xcheckbox xblack"><label><input type="checkbox" checked="checked" /><em></em><span>黑色样式</span></label></div></td>
+            </tr>
+          </table>
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">纵向复选框</div>
+          <div class="example">
+            <div class="xcheckbox xblue"><label><input type="checkbox" checked="checked" /><em></em><span>菠萝</span></label></div>
+            <div class="xcheckbox xblue"><label><input type="checkbox" /><em></em><span>芒果</span></label></div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;div class=&quot;xcheckbox&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type=&quot;checkbox&quot; name=&quot;checkbox1[]&quot; /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;菠萝&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+              <li><span>&lt;div class=&quot;xcheckbox&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type=&quot;checkbox&quot; name=&quot;checkbox1[]&quot; /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;芒果&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">横向复选框</div>
+          <div class="example">
+            <span class="xcheckbox xgreen"><label><input type="checkbox" checked="checked" /><em></em><span>菠萝</span></label></span>
+            <span class="xcheckbox xgreen"><label><input type="checkbox" /><em></em><span>芒果</span></label></span>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;span class=&quot;xcheckbox&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type=&quot;checkbox&quot; name=&quot;checkbox1[]&quot; /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;菠萝&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/span&gt;</span></li>
+              <li><span>&lt;span class=&quot;xcheckbox&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type=&quot;checkbox&quot; name=&quot;checkbox1[]&quot; /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;芒果&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/span&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+      </div><!--checkbox-->
+      
+      <div id="switch" class="maindiv">
+        <div class="page_tit">开关 &lt;input type="checkbox"&gt;</div>
+        <div class="page_tit3">本质上是单个的复选框</div>
+        <!--<div class="table_row">
+          <table class="ptable">
+            <tr class="first">
+              <td width="160">class=""</td>
+              <td>样式</td>
+            </tr>
+            <tr>
+              <td><code>xswitch</code></td>
+              <td><input class="xswitch" type="checkbox" checked="checked" /></td>
+            </tr>
+            <tr>
+              <td><code>xswitch</code> <code>xblue</code></td>
+              <td><div class="xswitchin"><input type="checkbox" checked="checked" /><span>红色样式</span></div></td>
+            </tr>
+            <tr>
+              <td><code>xswitch</code> <code>xred</code></td>
+              <td><div class="xswitch xred"><label><input type="checkbox" checked="checked" /><em></em><span>红色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xswitch</code> <code>xyellow</code></td>
+              <td><div class="xswitch xyellow"><label><input type="checkbox" checked="checked" /><em></em><span>黄石样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xswitch</code> <code>xgreen</code></td>
+              <td><div class="xswitch xgreen"><label><input type="checkbox" checked="checked" /><em></em><span>绿色样式</span></label></div></td>
+            </tr>
+            <tr>
+              <td><code>xswitch</code> <code>xblack</code></td>
+              <td><div class="xswitch xblack"><label><input type="checkbox" checked="checked" /><em></em><span>黑色样式</span></label></div></td>
+            </tr>
+          </table>
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">默认样式</div>
+          <div class="example">
+            <input class="xswitch" type="checkbox" />
+            <input class="xswitch" type="checkbox" checked="checked" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xswitch&quot; type=&quot;checkbox&quot; name=&quot;checkbox1&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">带ON/OFF文字</div>
+          <div class="example">
+            <input class="xswitch xonoff" type="checkbox" />
+            <input class="xswitch xonoff" type="checkbox" checked="checked" />
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xswitch xonoff&quot; type=&quot;checkbox&quot; name=&quot;checkbox1&quot; /&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">自定义文字描述</div>
+          <div class="page_tit3">class="<code>xswitch-tip</code>"，为 <code>&lt;input&gt;</code> <span>自定义文字描述</span></div>
+          <div class="example">
+            <span class="xswitch-tip"><label><input type="checkbox" /><em></em><span>是否发射核弹</span><span>发射！！</span></label></span>
+            <span class="xswitch-tip"><label><input type="checkbox" checked="checked" /><em></em><span>是否发射核弹</span><span>发射！！</span></label></span>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;div class=&quot;xswitch-tip&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type=&quot;checkbox&quot; name=&quot;checkbox1&quot; /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;是否发射核弹&lt;/span&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;发射！！&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">其他颜色</div>
+          <div class="page_tit3">class="<code>xswitch</code>"，为 <code>&lt;input&gt;</code> 额外添加一个<span>颜色CSS</span>即可</div>
+          <div class="page_tit3">class="<code>xswitch-tip</code>"，为 <code>&lt;input&gt;</code> 父标签额外添加一个<span>颜色CSS</span>即可</div>
+          <div class="example">
+            <div class="page_tit4">
+              <input class="xswitch xblue" type="checkbox" checked="checked" />
+              <input class="xswitch xred" type="checkbox" checked="checked" />
+              <input class="xswitch xyellow" type="checkbox" checked="checked" />
+              <input class="xswitch xgreen" type="checkbox" checked="checked" />
+              <input class="xswitch xblack" type="checkbox" checked="checked" />
+            </div>
+            <div class="page_tit4">
+              <input class="xswitch xonoff xblue" type="checkbox" checked="checked" />
+              <input class="xswitch xonoff xred" type="checkbox" checked="checked" />
+              <input class="xswitch xonoff xyellow" type="checkbox" checked="checked" />
+              <input class="xswitch xonoff xgreen" type="checkbox" checked="checked" />
+              <input class="xswitch xonoff xblack" type="checkbox" checked="checked" />
+            </div>
+            <div class="page_tit4">
+              <span class="xswitch-tip xblue"><label><input type="checkbox" checked="checked" /><em></em><span>是否发射核弹</span><span>发射！！</span></label></span>
+              <span class="xswitch-tip xred"><label><input type="checkbox" checked="checked" /><em></em><span>是否发射核弹</span><span>发射！！</span></label></span>
+              <span class="xswitch-tip xyellow"><label><input type="checkbox" checked="checked" /><em></em><span>是否发射核弹</span><span>发射！！</span></label></span>
+              <span class="xswitch-tip xgreen"><label><input type="checkbox" checked="checked" /><em></em><span>是否发射核弹</span><span>发射！！</span></label></span>
+              <span class="xswitch-tip xblack"><label><input type="checkbox" checked="checked" /><em></em><span>是否发射核弹</span><span>发射！！</span></label></span>
+            </div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;input class=&quot;xswitch xblue&quot; type=&quot;checkbox&quot; /&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class=&quot;xswitch-tip xblue&quot;&gt;</span></li>
+              <li class="level2"><span>&lt;label&gt;</span></li>
+              <li class="level3"><span>&lt;input type=&quot;checkbox&quot; name=&quot;checkbox1&quot; /&gt;&lt;em&gt;&lt;/em&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;是否发射核弹&lt;/span&gt;</span></li>
+              <li class="level3"><span>&lt;span&gt;发射！！&lt;/span&gt;</span></li>
+              <li class="level2"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+      </div><!--switch-->
+      
+      <div id="file" class="maindiv">
+        <div class="page_tit">上传控件 &lt;input type="file"&gt;</div>
+        <div class="page_tit3">class="<code>xfile</code>"，为 <code>&lt;input&gt;</code> 父标签内的上传控件增加默认样式</div>
+        <div class="table_row">
+          <div class="page_tit2">默认样式</div>
+          <div class="example">
+            <div class="xfile"><input type="file" /><span><i></i>默认样式</span></div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;div class="xfile"&gt;</span></li>
+              <li class="level2"><span>&lt;input type=&quot;file&quot; /&gt;</span></li>
+              <li class="level2"><span>&lt;span&gt;&lt;i&gt;&lt;/i&gt;默认样式&lt;/span&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="page_tit3">class="<code>xfile xlit</code>"，为 <code>&lt;input&gt;</code> 父标签内的上传控件增加小尺寸样式</div>
+        <div class="table_row">
+          <div class="page_tit2">小尺寸</div>
+          <div class="example">
+            <span class="xfile xlit"><input type="file" /><span><i></i>小尺寸</span></span>
+            <span class="xfile xlit xblue"><input type="file" /><span><i></i>小尺寸</span></span>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;span class="xfile xlit"&gt;</span></li>
+              <li class="level2"><span>&lt;input type=&quot;file&quot; /&gt;</span></li>
+              <li class="level2"><span>&lt;span&gt;&lt;i&gt;&lt;/i&gt;默认样式&lt;/span&gt;</span></li>
+              <li><span>&lt;/span&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+
+        <div class="table_row">
+          <div class="page_tit2">其他颜色</div>
+          <div class="example">
+            <span class="xfile xblue"><input type="file" /><span><i></i>蓝色样式</span></span>
+            <span class="xfile xred"><input type="file" /><span><i></i>红色样式</span></span>
+            <span class="xfile xyellow"><input type="file" /><span><i></i>黄色样式</span></span>
+            <span class="xfile xgreen"><input type="file" /><span><i></i>绿色样式</span></span>
+            <span class="xfile xblack"><input type="file" /><span><i></i>黑色样式</span></span>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;span class="xfile xblue"&gt;</span></li>
+              <li class="level2"><span>&lt;input type=&quot;file&quot; /&gt;</span></li>
+              <li class="level2"><span>&lt;span&gt;&lt;i&gt;&lt;/i&gt;默认样式&lt;/span&gt;</span></li>
+              <li><span>&lt;/span&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">无图标样式</div>
+          <div class="example">
+            <div class="xfile"><input type="file" /><span>无图标样式</span></div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;div class="xfile"&gt;</span></li>
+              <li class="level2"><span>&lt;input type=&quot;file&quot; /&gt;</span></li>
+              <li class="level2"><span>&lt;span&gt;无图片样式&lt;/span&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">自定义图片样式&lt;img&gt;</div>
+          <div class="page_tit3">图片无尺寸要求</div>
+          <div class="example">
+            <div class="xfile"><input type="file" /><span><img src="css/img.png" />自定义图片样式</span></div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;div class="xfile"&gt;</span></li>
+              <li class="level2"><span>&lt;input type=&quot;file&quot; /&gt;</span></li>
+              <li class="level2"><span>&lt;span&gt;&lt;img src=&quot;css/img.png&quot; /&gt;自定义图片样式&lt;/span&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+        
+        <div class="table_row">
+          <div class="page_tit2">自定义font样式&lt;i class=&quot;icon-<span>【自定义font class名】</span>&quot;&gt;</div>
+          <div class="page_tit3">当<span>&lt;i&gt;</span>标签class包含<code>icon-</code> <code>ico-</code> <code>ion-</code> <code>glyphicon-</code> <code>fa-</code> <code>ti-</code> <code>zmdi-</code> <code>wi-</code>（常用图标库）时，默认图标会被替换成新的font图标</div>
+          <div class="example">
+            <div class="xfile"><input type="file" /><span><i class="icon-xiaolian"></i>自定义font样式</span></div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;div class="xfile"&gt;</span></li>
+              <li class="level2"><span>&lt;input type=&quot;file&quot; /&gt;</span></li>
+              <li class="level2"><span>&lt;span&lt;i class="icon-"&gt;&lt;/i&gt;自定义font样式&lt;/span&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div><!--pre-->
+        </div><!--table_row-->
+      </div><!--file-->
+      
+      <div id="table" class="maindiv">
+        <div class="page_tit">表格 &lt;table&gt;</div>
+        <div class="table_row">
+          <table class="ptable">
+            <tr class="first">
+              <td width="140">标签</td>
+              <td>class=""</td>
+              <td>描述</td>
+            </tr>
+            <tr>
+              <td>&lt;table&gt;</td>
+              <td>&lt;table class="<code>xtable</code>"&gt;…&lt;/table&gt;</td>
+              <td>表格本身</td>
+            </tr>
+            <tr>
+              <td>&lt;table&gt;的父标签</td>
+              <td>&lt;div class="<code>xtablein</code>"&gt;&lt;table&gt;…&lt;/table&gt;&lt;/div&gt;</td>
+              <td>元素内的表格</td>
+            </tr>
+          </table>
+        </div><!--table_row-->
+        
+        <div id="table_1" class="table_row">
+          <div class="page_tit2">默认样式：<span>少量的内边距（padding:8px）和边框</span></div>
+          <div class="page_tit3">class="<code>xtable</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>默认样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>默认样式</span></div>
+          <div class="example">
+            <table class="xtable">
+              <tr>
+                <td rowspan="1" colspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td rowspan="2" colspan="1">1</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>d</td>
+                <td>e</td>
+                <td rowspan="2" colspan="1">f</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>g</td>
+                <td>h</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>i</td>
+                <td rowspan="1" colspan="2">j</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_2" class="table_row">
+          <div class="page_tit2">无外部边框样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xnobor-out</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>无外部边框样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xnobor-out</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>无外部边框样式</span></div>
+          <div class="example">
+            <table class="xtable xnobor-out">
+              <tr>
+                <td rowspan="1" colspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td rowspan="2" colspan="1">1</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>d</td>
+                <td>e</td>
+                <td rowspan="2" colspan="1">f</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>g</td>
+                <td>h</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>i</td>
+                <td rowspan="1" colspan="2">j</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xnobor-out"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xnobor-out"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_3" class="table_row">
+          <div class="page_tit2">无内部边框样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xnobor-in</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>无内部边框样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xnobor-in</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>无内部边框样式</span></div>
+          <div class="example">
+            <table class="xtable xnobor-in">
+              <tr>
+                <td>1</td><td>2</td><td>3</td>
+              </tr>
+              <tr>
+                <td>4</td><td>5</td><td>6</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xnobor-in"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xnobor-in"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_4" class="table_row">
+          <div class="page_tit2">无全部边框样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xnobor-all</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>无全部边框样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xnobor-all</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>无全部边框样式</span></div>
+          <div class="example">
+            <table class="xtable xnobor-all">
+              <tr>
+                <td>1</td><td>2</td><td>3</td>
+              </tr>
+              <tr>
+                <td>4</td><td>5</td><td>6</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xnobor-all"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xnobor-all"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_5" class="table_row">
+          <div class="page_tit2">水平边框样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xbor-tr</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>水平边框样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xbor-tr</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>水平边框样式</span></div>
+          <div class="example">
+            <table class="xtable xbor-tr">
+              <tr>
+                <td rowspan="1" colspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td rowspan="2" colspan="1">1</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>d</td>
+                <td>e</td>
+                <td rowspan="2" colspan="1">f</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>g</td>
+                <td>h</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>i</td>
+                <td rowspan="1" colspan="2">j</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xbor-tr"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xbor-tr"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_6" class="table_row">
+          <div class="page_tit2">水平边框无外边框样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xbor-tr-noout</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>水平边框无外边框样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xbor-tr-noout</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>水平边框无外边框样式</span></div>
+          <div class="example">
+            <table class="xtable xbor-tr-noout">
+              <tr>
+                <td rowspan="1" colspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td rowspan="2" colspan="1">1</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>d</td>
+                <td>e</td>
+                <td rowspan="2" colspan="1">f</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>g</td>
+                <td>h</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>i</td>
+                <td rowspan="1" colspan="2">j</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xbor-tr-noout"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xbor-tr-noout"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_7" class="table_row">
+          <div class="page_tit2">圆角样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xround</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>圆角样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xround</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>圆角样式</span></div>
+          <div class="example">
+            <table class="xtable xround">
+              <tr>
+                <th>1</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+              <tr>
+                <td rowspan="2">1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@TwBootstrap</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xround"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xround"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_8" class="table_row">
+          <div class="page_tit2">行间隔背景色 <span>奇数(xodd) 或 偶数(xeven)</span></div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xodd</code> / <code>xeven</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>行间隔背景色</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xodd</code> / <code>xeven</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>行间隔背景色</span></div>
+          <div class="example">
+            <table class="xtable xodd">
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@TwBootstrap</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+            </table>
+            <br />
+            <table class="xtable xeven">
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@TwBootstrap</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xodd"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xodd"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+              <li></li>
+              <li>/****************或****************/</li>
+              <li></li>
+              <li><span>&lt;table class="xtable xeven"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xeven"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_9" class="table_row">
+          <div class="page_tit2">鼠标悬停样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xhover</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>鼠标悬停样式</span></div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xhover</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>鼠标悬停样式</span></div>
+          <div class="example">
+            <table class="xtable xhover">
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@TwBootstrap</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+            </table>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable xhover"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xhover"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+      </div><!--table-->
+      
+      <div class="table_row">
+        <div class="page_tit3" style="text-align:right;">本项目为<span>纯css项目</span>，参考了Bootstrap</div>
+      </div><!--table_row-->
+    </div><!--pright-->
+  </div><!--page_pr-->
+</div><!--page-->
+
+<!--以下为非必要代码-->
+<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="font/iconfont.css" type="text/css" rel="stylesheet" />
+<script>
+$(window).scroll(function()
+{
+	saction();
+});
+function saction()
+{
+	liarr = new Array("input","textarea","select","button","radio","checkbox","switch","file","table_1","table_2","table_3","table_4","table_5","table_6","table_7","table_8","table_9");
+	d = new Array();
+	t = $(window).scrollTop();
+	for(i=0;i<liarr.length;i++)
+	{
+		d[i] = $("#"+liarr[i]).offset().top-50; //提前50像素生效
+		if(t>d[i])
+		{
+			$(".li_"+liarr[i]).addClass("on").siblings().removeClass("on");
+		}
+	}
+}
+window.onload=function(){
+	bheight = window.innerHeight-20;
+	pheight = $(".pleft").height();
+	if(bheight<pheight){
+		$(".pleft").addClass("pleft_no");
+	}
+}
+
+//复制代码
+$(document).on("click",".precopy",function(){
+	pa = $(this).parents(".pre");
+	olheight = $(pa).find("ol").height();
+	if($(pa).find(".precode").is(":hidden"))
+	{
+		ol = $(pa).find("ol li");
+		$(pa).find(".precode").css({"height":olheight+"px"});
+		html = '<textarea class="xtext xful">';
+		for(i=0;i<ol.length;i++)
+		{
+			if($(this).hasClass("precopy2"))
+			{
+				if($(ol[i]).hasClass("level2")){
+					html += "&nbsp;&nbsp;";
+				}else if($(ol[i]).hasClass("level3")){
+					html += "&nbsp;&nbsp;&nbsp;&nbsp;";
+				}else if($(ol[i]).hasClass("level4")){
+					html += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+				}else if($(ol[i]).hasClass("level5")){
+					html += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+				}
+			}
+			
+			if($(ol[i]).find("span").html())
+			{
+				html += $(ol[i]).find("span").html();
+			}
+			
+			if(i!=ol.length-1 && $(this).hasClass("precopy2")){
+				html += "\n";
+			}
+		}
+		html += '</textarea>';
+		$(pa).find(".precode").html(html);
+		$(pa).find("ol").hide();
+		$(pa).find(".precode").show();
+		$(pa).find(".precode textarea").select();
+	}
+	else
+	{
+		$(pa).find("ol").show();
+		$(pa).find(".precode").hide();
+		$(pa).find(".precode").html("");
+		$(pa).find(".precode").css({"height":""});
+	}
+})
+$(document).on("blur",".precode textarea",function(){
+	$(this).parents(".pre").find("ol").show();
+	$(this).parent(".precode").hide();
+	$(this).parent(".precode").html("");
+})
+
+//代码暗色调
+$(document).on("click",".pretype",function(){
+	$(this).parents(".pre").toggleClass("on");
+})
+</script>
+
+</body>
+</html>
