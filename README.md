@@ -8,7 +8,7 @@
 
 ### 预览地址
 
-[https://ovsexia.gitee.io/xui/](https://ovsexia.gitee.io/xui/)
+[https://ovsexia.github.io/xui/index.html](https://ovsexia.github.io/xui/index.html)
 
 ### 使用
 
