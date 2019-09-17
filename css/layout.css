@@ -12,19 +12,9 @@ ul li {list-style-type:none;}
 input, textarea, select, button {outline:none;}
 input[type="text"], textarea {resize:none; -webkit-appearance:none; border-radius:0;}
 button[type="submit"], button[type="button"], input[type="submit"], input[type="button"], label, label input[type="checkbox"], label input[type="radio"] {cursor:pointer;}
-
-/*兼容Chrome和Firefox边框样式*/
 select {border:1px #ddd solid;}
-
-/** {touch-action:pan-y;}*/
-
-/*重置苹果默认的select样式*/
+/*重置select默认样式*/
 select {appearance:none; -moz-appearance:none; -webkit-appearance:none; background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGBAMAAAAFwGKyAAAAElBMVEUAAAAAAAAAAAAAAAAAAAAAAADgKxmiAAAABXRSTlMAvDS0P4Bi/F4AAAAjSURBVAjXYxANDWQAAtfQEBDFGCoAophCFRhAwJgBDJRABABR1wLcaCoA8QAAAABJRU5ErkJggg==") no-repeat right center #fff; height:24px; padding-right:5px; border-radius:0;}
-
-/*清除ie点击链接出现的边框*/
-a, area {blr:expression_r(this.onFocus=this.blur());}
-
-/*解除Webkit 12号字体限制*/
-html {-webkit-text-size-adjust:none;}
+/** {touch-action:pan-y;}*/
 
 body, html {width:100%; overflow-x:hidden;}

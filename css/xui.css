@@ -2,6 +2,7 @@
 
 /*****表单控件*****/
 label {cursor:pointer;}
+input, textarea, select, button {outline:none;}
 .xinput, .xtext {border:1px solid #bebebe; -webkit-box-sizing:border-box; box-sizing:border-box; font-size:14px; color:#333; width:200px;}
 .xinput, .xtext, .xselect {-webkit-transition:0.2s ease-in; transition:0.2s ease-in; transition-property:box-shadow;}
 .xinput {transition-property:box-shadow,border-color;}
@@ -17,10 +18,10 @@ label {cursor:pointer;}
 .xinput.xwidth4, .xtext.xwidth4, .xselect.xwidth4 {width:400px;}
 .xinput.xwidth5, .xtext.xwidth5, .xselect.xwidth5 {width:450px;}
 .xinput.xwidth6, .xtext.xwidth6, .xselect.xwidth6 {width:500px;}
-.xinput.xheight1 {height:38px;}
-.xinput.xheight2 {height:42px;}
-.xinput.xheight3 {height:46px;}
-.xinput.xheight4 {height:50px;}
+.xinput.xheight1, .xselect.xheight1 {height:38px;}
+.xinput.xheight2, .xselect.xheight2 {height:42px;}
+.xinput.xheight3, .xselect.xheight3 {height:46px;}
+.xinput.xheight4, .xselect.xheight4 {height:50px;}
 .xtext.xheight1 {height:100px;}
 .xtext.xheight2 {height:120px;}
 .xtext.xheight3 {height:140px;}
@@ -74,8 +75,8 @@ label {cursor:pointer;}
 .xbutton.xdisabled, .xbutton.disabled:hover, .xbutton:disabled, .xbutton:disabled:hover {color:#aeaeae; border:1px solid #d0d0d0; cursor:default; background-image:-moz-linear-gradient(top,#fff,#f1f1f1); background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f1f1f1)); background-image:-webkit-linear-gradient(top,#fff,#f1f1f1); background-image:-o-linear-gradient(top,#fff,#f1f1f1); background-image:linear-gradient(to bottom,#fff,#f1f1f1);}
 
 /*xbutton-lit*/
-.xfile.xlit {height:34px;}
-.xbutton.xlit, .xfile.xlit span {height:34px; font-size:12px; padding:0 12px;}
+.xfile.xlit {height:34px; min-width:58px;}
+.xbutton.xlit, .xfile.xlit span {height:34px; font-size:12px; padding:0 12px; min-width:58px;}
 .xfile.xlit i, .xfile.xlit img {position:relative; top:-1px;}
 /*****表单控件*****/
 
@@ -84,25 +85,30 @@ label {cursor:pointer;}
 .xradio {height:20px; line-height:20px; position:relative; font-size:14px; margin-bottom:10px;}
 .xradio:last-child {margin-bottom:0;}
 span.xradio {display:inline-block; margin-bottom:0; margin-right:18px; vertical-align:top;}
-.xradio label span {margin-left:26px;}
+.xradio label span {margin-left:26px; color:#333;}
 .xradio label input[type="radio"] {position:absolute; z-index:-1; width:0; height:0; overflow:hidden; visibility:hidden; opacity:0;}
 .xradio label em {display:block; width:20px; height:20px; border-radius:50%; border:1px solid #ddd; background-color:#fff; -webkit-box-sizing:border-box; box-sizing:border-box; position:absolute; top:0; left:0; -webkit-transition:0.1s ease-in; transition:0.1s ease-in; -webkit-transition-property:border-color,background-color; transition-property:border-color,background-color;}
 .xradio label, .xradio label span {height:20px; line-height:20px; display:inline-block;}
 .xradio label input[type="radio"]:checked + em {border-color:#696969; background-color:#696969; background-clip:content-box; padding:4px;}
-.xradio.xblue label input[type="radio"]:checked + em {border-color:#005ecd; background-color:#005ecd;}
-.xradio.xred label input[type="radio"]:checked + em {border-color:#e84543; background-color:#e84543;}
-.xradio.xyellow label input[type="radio"]:checked + em {border-color:#f4c044; background-color:#f4c044;}
-.xradio.xgreen label input[type="radio"]:checked + em {border-color:#5cb85c; background-color:#5cb85c;}
-.xradio.xblack label input[type="radio"]:checked + em {border-color:#222222; background-color:#222222;}
+.xradio.xblue label input[type="radio"]:checked + em, .xradio.xblue2 label input[type="radio"]:checked + em {border-color:#005ecd; background-color:#005ecd;}
+.xradio.xred label input[type="radio"]:checked + em, .xradio.xred2 label input[type="radio"]:checked + em {border-color:#e84543; background-color:#e84543;}
+.xradio.xyellow label input[type="radio"]:checked + em, .xradio.xyellow2 label input[type="radio"]:checked + em {border-color:#f4c044; background-color:#f4c044;}
+.xradio.xgreen label input[type="radio"]:checked + em, .xradio.xgreen2 label input[type="radio"]:checked + em {border-color:#5cb85c; background-color:#5cb85c;}
+.xradio.xblack label input[type="radio"]:checked + em, .xradio.xblack2 label input[type="radio"]:checked + em {border-color:#222222; background-color:#222222;}
+.xradio.xblue2 label input[type="radio"]:checked + em + span {color:#005ecd;}
+.xradio.xred2 label input[type="radio"]:checked + em + span {color:#e84543;}
+.xradio.xyellow2 label input[type="radio"]:checked + em + span {color:#f4c044;}
+.xradio.xgreen2 label input[type="radio"]:checked + em + span {color:#5cb85c;}
+.xradio.xblack2 label input[type="radio"]:checked + em + span {color:#222222;}
 /*****单选框*****/
 
 
 /*****复选框*****/
-.xcheckbox {height:20px; line-height:20px; position:relative; font-size:14px; margin-bottom:10px;}
+.xcheckbox {min-width:20px; height:20px; line-height:20px; position:relative; font-size:14px; margin-bottom:10px;}
 .xcheckbox:last-child {margin-bottom:0;}
 span.xcheckbox {display:inline-block; margin-bottom:0; margin-right:18px; vertical-align:top;}
 span.xcheckbox:last-child {margin-right:0;}
-.xcheckbox label span {margin-left:26px;}
+.xcheckbox label span {margin-left:26px; color:#333;}
 .xcheckbox label input[type="checkbox"] {position:absolute; z-index:-1; width:0; height:0; overflow:hidden; visibility:hidden; opacity:0;}
 .xcheckbox label em {display:block; width:20px; height:20px; border-radius:4px; border:1px solid #ddd; background-color:#fff; -webkit-box-sizing:border-box; box-sizing:border-box; position:absolute; top:0; left:0; -webkit-transition:0.1s ease-in; transition:0.1s ease-in; -webkit-transition-property:border-color,background-color; transition-property:border-color,background-color;}
 .xcheckbox label em:before, .xcheckbox label em:after {content:""; display:block; position:absolute; background:#fff;}
@@ -110,11 +116,16 @@ span.xcheckbox:last-child {margin-right:0;}
 .xcheckbox label em:after {width:10px; height:2px; -webkit-transform:rotate(128deg); transform:rotate(128deg); top:8px; left:6px;}
 .xcheckbox label, .xcheckbox label span {height:20px; line-height:20px; display:inline-block;}
 .xcheckbox label input[type="checkbox"]:checked + em {border-color:#696969; background-color:#696969;}
-.xcheckbox.xblue label input[type="checkbox"]:checked + em {border-color:#005ecd; background-color:#005ecd;}
-.xcheckbox.xred label input[type="checkbox"]:checked + em {border-color:#e84543; background-color:#e84543;}
-.xcheckbox.xyellow label input[type="checkbox"]:checked + em {border-color:#f4c044; background-color:#f4c044;}
-.xcheckbox.xgreen label input[type="checkbox"]:checked + em {border-color:#5cb85c; background-color:#5cb85c;}
-.xcheckbox.xblack label input[type="checkbox"]:checked + em {border-color:#222222; background-color:#222222;}
+.xcheckbox.xblue label input[type="checkbox"]:checked + em, .xcheckbox.xblue2 label input[type="checkbox"]:checked + em {border-color:#005ecd; background-color:#005ecd;}
+.xcheckbox.xred label input[type="checkbox"]:checked + em, .xcheckbox.xred2 label input[type="checkbox"]:checked + em {border-color:#e84543; background-color:#e84543;}
+.xcheckbox.xyellow label input[type="checkbox"]:checked + em, .xcheckbox.xyellow2 label input[type="checkbox"]:checked + em {border-color:#f4c044; background-color:#f4c044;}
+.xcheckbox.xgreen label input[type="checkbox"]:checked + em, .xcheckbox.xgreen2 label input[type="checkbox"]:checked + em {border-color:#5cb85c; background-color:#5cb85c;}
+.xcheckbox.xblack label input[type="checkbox"]:checked + em, .xcheckbox.xblack2 label input[type="checkbox"]:checked + em {border-color:#222222; background-color:#222222;}
+.xcheckbox.xblue2 label input[type="checkbox"]:checked + em + span {color:#005ecd;}
+.xcheckbox.xred2 label input[type="checkbox"]:checked + em + span {color:#e84543;}
+.xcheckbox.xyellow2 label input[type="checkbox"]:checked + em + span {color:#f4c044;}
+.xcheckbox.xgreen2 label input[type="checkbox"]:checked + em + span {color:#5cb85c;}
+.xcheckbox.xblack2 label input[type="checkbox"]:checked + em + span {color:#222222;}
 /*****复选框*****/
 
 

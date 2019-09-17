@@ -25,6 +25,7 @@ code {font-size:12px; padding:2px 4px; color:#d14; white-space:nowrap; backgroun
 .ptable tr > td {border:1px solid #ddd; padding:14px 6px;}
 .ptable tr.first {font-weight:bold;}
 .ptable tr:nth-child(even) {background:#f9f9f9;}
+.ptable span.red {color:#d14;}
 .maindiv {border-bottom:1px solid #ddd; padding-bottom:60px; margin-bottom:40px;}
 .pre {background:#f7f7f9; border:1px solid #e1e1e8; padding:15px 8px; position:relative; border-radius:0 0 5px 5px;}
 .pre.on {background:#1b2426;}
@@ -32,16 +33,18 @@ code {font-size:12px; padding:2px 4px; color:#d14; white-space:nowrap; backgroun
 .pre ol li {padding-left:15px; color:#bebec5; font-size:14px;}
 .pre.on ol li {color:#fff;}
 .pre ol li span {color:teal;}
+.pre ol li span span {color:#d14;}
 .pre.on ol li span {color:#fff;}
+.pre.on ol li span span {color:#fe4d79;}
 .pre ol li.level2 {padding-left:30px;}
 .pre ol li.level3 {padding-left:45px;}
 .pre ol li.level4 {padding-left:60px;}
 .pre ol li.level5 {padding-left:75px;}
-.pre ol li.level6 {padding-left:45px;}
-.pre ol li.level7 {padding-left:90px;}
-.pre ol li.level8 {padding-left:105px;}
-.pre ol li.level9 {padding-left:120px;}
-.pre ol li.level10 {padding-left:135px;}
+.pre ol li.level6 {padding-left:90px;}
+.pre ol li.level7 {padding-left:105px;}
+.pre ol li.level8 {padding-left:120px;}
+.pre ol li.level9 {padding-left:135px;}
+.pre ol li.level10 {padding-left:150px;}
 .pre:after {content:""; display:block; width:40px; height:100%; position:absolute; top:0; left:0; background:#fff; border-right:1px solid #ececf0; z-index:1; border-radius:0 0 0 5px;}
 .pre.on:after {background:#242e30; border-color:#435a5f;}
 .preicon {height:19px; margin-left:42px; margin-top:15px;}
