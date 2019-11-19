@@ -24,14 +24,15 @@
         <li class="son li_file"><a href="#file">上传控件</a></li>
         <li><a href="#table_1">表格 &lt;table&gt;</a></li>
         <li class="son li_table_1"><a href="#table_1">默认样式</a></li>
-        <li class="son li_table_2"><a href="#table_2">无外部边框样式</a></li>
-        <li class="son li_table_3"><a href="#table_3">无内部边框样式</a></li>
-        <li class="son li_table_4"><a href="#table_4">无全部边框样式</a></li>
-        <li class="son li_table_5"><a href="#table_5">水平边框样式</a></li>
-        <li class="son li_table_6"><a href="#table_6">水平边框无外边框样式</a></li>
-        <li class="son li_table_7"><a href="#table_7">圆角样式</a></li>
-        <li class="son li_table_8"><a href="#table_8">行间隔背景色</a></li>
-        <li class="son li_table_9"><a href="#table_9">鼠标悬停样式</a></li>
+        <li class="son li_table_2"><a href="#table_2">首行样式</a></li>
+        <li class="son li_table_3"><a href="#table_3">无外部边框样式</a></li>
+        <li class="son li_table_4"><a href="#table_4">无内部边框样式</a></li>
+        <li class="son li_table_5"><a href="#table_5">无全部边框样式</a></li>
+        <li class="son li_table_6"><a href="#table_6">水平边框样式</a></li>
+        <li class="son li_table_7"><a href="#table_7">水平边框无外边框样式</a></li>
+        <li class="son li_table_8"><a href="#table_8">圆角样式</a></li>
+        <li class="son li_table_9"><a href="#table_9">行间隔背景色</a></li>
+        <li class="son li_table_10"><a href="#table_10">鼠标悬停样式</a></li>
       </ul>
     </div><!--pleft-->
     
@@ -264,7 +265,7 @@
 
         <div class="table_row">
           <div class="page_tit2">高度</div>
-          <div class="page_tit3"><code>xheight1</code>高度为<span>38px</span>，每次增加<span>20px</span></div>
+          <div class="page_tit3"><code>xheight1</code>高度为<span>100px</span>，每次增加<span>20px</span></div>
           <div class="example">
             <textarea class="xtext xheight1" type="text" placeholder="xheight1: 100px" /></textarea><br><br>
             <textarea class="xtext xheight2" type="text" placeholder="xheight2: 120px" /></textarea><br><br>
@@ -1308,10 +1309,142 @@
         
         <div id="table_1" class="table_row">
           <div class="page_tit2">默认样式：<span>少量的内边距（padding:8px）和边框</span></div>
-          <div class="page_tit3">class="<code>xtable</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>默认样式</span></div>
-          <div class="page_tit3">class="<code>xtablein</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>默认样式</span></div>
+          <div class="page_tit3">class="<code>xtable</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>样式</span>，对下级表格不生效</div>
+          <div class="page_tit3">class="<code>xtablein</code>"，为 <code>&lt;table&gt;</code> 父标签内的下一级表格增加<span>样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xtableall</code>"，为 <code>&lt;table&gt;</code> 父标签内的所有下级表格增加<span>样式</span></div>
           <div class="example">
-            <table class="xtable">
+            <table class="xtable xodd">
+              <tr>
+                <td width="100">A</td>
+                <td width="200">B</td>
+                <td>C</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>
+                  <table class="xtable">
+                    <tr>
+                      <td>ASC</td>
+                      <td>ASC</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>这是一个表格，</td>
+                      <td>对下级的表格不会生效</td>
+                    </tr>
+                    <tr>
+                      <td>aa</td>
+                      <td>bb</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <p>&nbsp;</p>
+            <div class="xtablein">
+              <table>
+                <tr>
+                  <td width="100">A</td>
+                  <td width="200">B</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <table class="xtable">
+                      <tr>
+                        <td>ASC</td>
+                        <td>ASC</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>这是一个表格，</td>
+                        <td>对下级的表格不会生效</td>
+                      </tr>
+                      <tr>
+                        <td>aa</td>
+                        <td>bb</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <p>&nbsp;</p>
+            <div class="xtablein xtableall xround xodd">
+              <table>
+                <tr>
+                  <td width="100">A</td>
+                  <td width="200">B</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <table class="xtable">
+                      <tr>
+                        <td>ASC</td>
+                        <td>ASC</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>这是一个表格，</td>
+                        <td>对所有下级的表格生效</td>
+                      </tr>
+                      <tr>
+                        <td>aa</td>
+                        <td>bb</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div><!--example-->
+          <div class="pre">
+            <ol>
+              <li><span>&lt;table class="xtable"&gt;</span></li>
+              <li class="level2"><span>…</span></li>
+              <li><span>&lt;/table&gt;</span></li>
+              <li></li>
+              <li>/****或****/</li>
+              <li></li>
+              <li><span>&lt;div class="xtablein"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+              <li></li>
+              <li><span>&lt;div class="xtablein xtableall"&gt;</span></li>
+              <li class="level2"><span>&lt;table&gt;</span></li>
+              <li class="level3"><span>…</span></li>
+              <li class="level2"><span>&lt;/table&gt;</span></li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ol>
+            <div class="precode"></div>
+            <div class="preicon">
+              <span class="precopy precopy1" title="格式化复制"></span>
+              <span class="precopy precopy2" title="复制"></span>
+              <span class="pretype" title="暗色调"></span>
+            </div><!--precopy-->
+          </div>
+        </div><!--table_row-->
+        
+        <div id="table_2" class="table_row">
+          <div class="page_tit2">首行样式</div>
+          <div class="page_tit3">class="<code>xtable</code> <code>xfirst</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>首行样式</span></div>
+          <div class="page_tit3">class="<code>xtablein</code> <code>xfirst</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>首行样式</span></div>
+          <div class="example">
+            <table class="xtable xfirst">
               <tr>
                 <td rowspan="1" colspan="2">A</td>
                 <td>B</td>
@@ -1342,13 +1475,13 @@
           </div><!--example-->
           <div class="pre">
             <ol>
-              <li><span>&lt;table class="xtable"&gt;</span></li>
+              <li><span>&lt;table class="xtable <span>xnobor-out</span>"&gt;</span></li>
               <li class="level2"><span>…</span></li>
               <li><span>&lt;/table&gt;</span></li>
               <li></li>
               <li>/****或****/</li>
               <li></li>
-              <li><span>&lt;div class="xtablein"&gt;</span></li>
+              <li><span>&lt;div class="xtablein <span>xnobor-out</span>"&gt;</span></li>
               <li class="level2"><span>&lt;table&gt;</span></li>
               <li class="level3"><span>…</span></li>
               <li class="level2"><span>&lt;/table&gt;</span></li>
@@ -1362,8 +1495,8 @@
             </div><!--precopy-->
           </div>
         </div><!--table_row-->
-        
-        <div id="table_2" class="table_row">
+
+        <div id="table_3" class="table_row">
           <div class="page_tit2">无外部边框样式</div>
           <div class="page_tit3">class="<code>xtable</code> <code>xnobor-out</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>无外部边框样式</span></div>
           <div class="page_tit3">class="<code>xtablein</code> <code>xnobor-out</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>无外部边框样式</span></div>
@@ -1420,7 +1553,7 @@
           </div>
         </div><!--table_row-->
         
-        <div id="table_3" class="table_row">
+        <div id="table_4" class="table_row">
           <div class="page_tit2">无内部边框样式</div>
           <div class="page_tit3">class="<code>xtable</code> <code>xnobor-in</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>无内部边框样式</span></div>
           <div class="page_tit3">class="<code>xtablein</code> <code>xnobor-in</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>无内部边框样式</span></div>
@@ -1457,7 +1590,7 @@
           </div>
         </div><!--table_row-->
         
-        <div id="table_4" class="table_row">
+        <div id="table_5" class="table_row">
           <div class="page_tit2">无全部边框样式</div>
           <div class="page_tit3">class="<code>xtable</code> <code>xnobor-all</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>无全部边框样式</span></div>
           <div class="page_tit3">class="<code>xtablein</code> <code>xnobor-all</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>无全部边框样式</span></div>
@@ -1494,7 +1627,7 @@
           </div>
         </div><!--table_row-->
         
-        <div id="table_5" class="table_row">
+        <div id="table_6" class="table_row">
           <div class="page_tit2">水平边框样式</div>
           <div class="page_tit3">class="<code>xtable</code> <code>xbor-tr</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>水平边框样式</span></div>
           <div class="page_tit3">class="<code>xtablein</code> <code>xbor-tr</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>水平边框样式</span></div>
@@ -1551,7 +1684,7 @@
           </div>
         </div><!--table_row-->
         
-        <div id="table_6" class="table_row">
+        <div id="table_7" class="table_row">
           <div class="page_tit2">水平边框无外边框样式</div>
           <div class="page_tit3">class="<code>xtable</code> <code>xbor-tr-noout</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>水平边框无外边框样式</span></div>
           <div class="page_tit3">class="<code>xtablein</code> <code>xbor-tr-noout</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>水平边框无外边框样式</span></div>
@@ -1608,7 +1741,7 @@
           </div>
         </div><!--table_row-->
         
-        <div id="table_7" class="table_row">
+        <div id="table_8" class="table_row">
           <div class="page_tit2">圆角样式</div>
           <div class="page_tit3">class="<code>xtable</code> <code>xround</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>圆角样式</span></div>
           <div class="page_tit3">class="<code>xtablein</code> <code>xround</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>圆角样式</span></div>
@@ -1667,7 +1800,7 @@
           </div>
         </div><!--table_row-->
         
-        <div id="table_8" class="table_row">
+        <div id="table_9" class="table_row">
           <div class="page_tit2">行间隔背景色 <span>奇数(xodd) 或 偶数(xeven)</span></div>
           <div class="page_tit3">class="<code>xtable</code> <code>xodd</code> / <code>xeven</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>行间隔背景色</span></div>
           <div class="page_tit3">class="<code>xtablein</code> <code>xodd</code> / <code>xeven</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>行间隔背景色</span></div>
@@ -1763,7 +1896,7 @@
           </div>
         </div><!--table_row-->
         
-        <div id="table_9" class="table_row">
+        <div id="table_10" class="table_row">
           <div class="page_tit2">鼠标悬停样式</div>
           <div class="page_tit3">class="<code>xtable</code> <code>xhover</code>"，为 <code>&lt;table&gt;</code> 标签增加<span>鼠标悬停样式</span></div>
           <div class="page_tit3">class="<code>xtable</code> <code>xhover</code>"，为 <code>&lt;table&gt;</code> 父标签内的表格增加<span>鼠标悬停样式</span></div>
@@ -1837,7 +1970,7 @@ $(window).scroll(function()
 });
 function saction()
 {
-	liarr = new Array("input","textarea","select","button","radio","checkbox","switch","file","table_1","table_2","table_3","table_4","table_5","table_6","table_7","table_8","table_9");
+	liarr = new Array("input","textarea","select","button","radio","checkbox","switch","file","table_1","table_2","table_3","table_4","table_5","table_6","table_7","table_8","table_9","table_10");
 	d = new Array();
 	t = $(window).scrollTop();
 	for(i=0;i<liarr.length;i++)
