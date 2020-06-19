@@ -35,8 +35,8 @@ input, textarea, select, button {outline:none;}
 .xinput.xreadonly:focus {border-color:#bebebe; box-shadow:inset 0 0 0 rgba(0,0,0,0),0 0 0 rgba(0,0,0,0);}
 .xbutton {box-shadow:inset 0px 0px 2px #fff; -webkit-box-shadow:inset 0px 0px 2px #fff; -moz-box-shadow:inset 0px 0px 2px #fff; padding:0 18px; height:38px; cursor:pointer; font-size:14px; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
 .xbutton.xmin {min-width:72px;}
-.xselect {width:200px; height:34px; border:1px solid #bebebe; padding:0 16px 0 6px; -webkit-box-sizing:border-box; box-sizing:border-box; border-radius:0; appearance:none; -moz-appearance:none; -webkit-appearance:none; background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAEAQMAAABvKif3AAAABlBMVEUAAABAQEBTWDqaAAAAAXRSTlMAQObYZgAAABRJREFUCNdj+MfAUMPAYMHAIMAAABAOAcNSkrYcAAAAAElFTkSuQmCC"); background-repeat:no-repeat; background-position:right center; background-color:#fff;}
-.xselect.xblack {background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAEAQMAAABvKif3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABRJREFUCNdj+MfAUMPAYMHAIMAAABAOAcNSkrYcAAAAAElFTkSuQmCC"); background-color:#333; border-color:#333; color:#fff;}
+.xselect {width:200px; height:34px; border:1px solid #bebebe; padding:0 22px 0 8px; -webkit-box-sizing:border-box; box-sizing:border-box; border-radius:0; appearance:none; -moz-appearance:none; -webkit-appearance:none; background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGAQMAAADwsoykAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABhJREFUCNdjAIL/DQz1DAx2DAwyDAwcDAAchQJh0xr+nAAAAABJRU5ErkJggg=="); background-repeat:no-repeat; background-position:right center; background-color:#fff;}
+.xselect.xblack {background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAGAQMAAADwsoykAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABhJREFUCNdjAIL/DQz1DAx2DAwyDAwcDAAchQJh0xr+nAAAAABJRU5ErkJggg=="); background-color:#333; border-color:#333; color:#fff;}
 
 /*normal*/
 .xbutton, .xfile span {color:#333; border:1px solid #bebebe; background-image:-moz-linear-gradient(top,#fff,#f1f1f1); background-image:-webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f1f1f1)); background-image:-webkit-linear-gradient(top,#fff,#f1f1f1); background-image:-o-linear-gradient(top,#fff,#f1f1f1); background-image:linear-gradient(to bottom,#fff,#f1f1f1);}
@@ -84,8 +84,9 @@ input, textarea, select, button {outline:none;}
 
 /*****单选框*****/
 .xradio {height:20px; line-height:20px; position:relative; font-size:14px; margin-bottom:10px;}
-.xradio:last-child {margin-bottom:0;}
-span.xradio {display:inline-block; margin-bottom:0; margin-right:18px; vertical-align:top;}
+div.xradio:last-child {margin-bottom:0;}
+span.xradio {display:inline-block; margin-bottom:0; margin-right:16px; vertical-align:top;}
+span.xradio:last-child {margin-right:0;}
 .xradio label span {margin-left:26px; color:#333;}
 .xradio label input[type="radio"] {position:absolute; z-index:-1; width:0; height:0; overflow:hidden; visibility:hidden; opacity:0;}
 .xradio label em {display:block; width:20px; height:20px; border-radius:50%; border:1px solid #ddd; background-color:#fff; -webkit-box-sizing:border-box; box-sizing:border-box; position:absolute; top:0; left:0; -webkit-transition:0.1s ease-in; transition:0.1s ease-in; -webkit-transition-property:border-color,background-color; transition-property:border-color,background-color;}
@@ -106,8 +107,8 @@ span.xradio {display:inline-block; margin-bottom:0; margin-right:18px; vertical-
 
 /*****复选框*****/
 .xcheckbox {min-width:20px; height:20px; line-height:20px; position:relative; font-size:14px; margin-bottom:10px;}
-.xcheckbox:last-child {margin-bottom:0;}
-span.xcheckbox {display:inline-block; margin-bottom:0; margin-right:18px; vertical-align:top;}
+div.xcheckbox:last-child {margin-bottom:0;}
+span.xcheckbox {display:inline-block; margin-bottom:0; margin-right:16px; vertical-align:top;}
 span.xcheckbox:last-child {margin-right:0;}
 .xcheckbox label span {margin-left:26px; color:#333;}
 .xcheckbox label input[type="checkbox"] {position:absolute; z-index:-1; width:0; height:0; overflow:hidden; visibility:hidden; opacity:0;}
